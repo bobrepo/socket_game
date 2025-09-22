@@ -31,6 +31,8 @@ void *get_inp_value(void *arg) {
   while (run) {
 
     recvfrom(sock, buffer, buffer_size, 0, NULL, 0);
+    system("clear");
+
     for (int i = 0; i < 4; i++) {
 
       for (int j = 0; j < 4; j++) {
